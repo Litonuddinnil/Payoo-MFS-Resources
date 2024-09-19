@@ -3,7 +3,6 @@
      event.preventDefault();
      const amount =document.getElementById('amount-number').value;
     const pinNumber =document.getElementById('pin-number').value;
-    const btnLogOut =document.getElementById('log-out').innerText; 
      if(pinNumber==="1234"){
         const currentBalance =document.getElementById('money-number').innerText;
         const  amountNumber =parseFloat(amount);

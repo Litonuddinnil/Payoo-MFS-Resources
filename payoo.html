@@ -32,7 +32,8 @@
                      </div>
                      <div class="divider"></div>
                      <div>
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <!-- add  money start -->
+                      <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body ">
                           <div class="form-control">
                             <label class="label">
@@ -52,7 +53,29 @@
                           </div>
                         </form>
                       </div>
-                       
+                       <!-- add money end -->
+                      <!-- cash out start -->
+                      <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body ">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Amount to cashout</span>
+                            </label>
+                            <input id="amount-number-cashOut" type="text" placeholder=" Enter your amount" class="input input-bordered " required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Pin Number</span>
+                            </label>
+                            <input id="pin-number-cashOut" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" autocomplete="off"  required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-money-cashOut" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- cash out end -->
                       </div>
                      </div>
                 </div>
@@ -60,5 +83,7 @@
           </div>
      </main>
      <script src="./scripts/payoo.js"></script>
+     <script src="./scripts/cashout.js"></script>
+     <script src="./scripts/feature.js"></script>
 </body>
 </html>
