@@ -14,7 +14,7 @@
     // this is temporary.yo should don't like this.
     if(phoneNumber==='01309623416' && pinNumber==='1234'){
         console.log("you login successfully.");
-        window.location.href ='/payoo.html'; ///Payoo-MFS-Resources--->github problem fixed this is a url the payoo-repojotory
+        window.location.href ='/Payoo-MFS-Resources/payoo.html'; ///Payoo-MFS-Resources--->github problem fixed this is a url the payoo-repojotory
         // step 5 == alow user to use the website
     }
     else{
