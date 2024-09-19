@@ -8,15 +8,15 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-     <main class="flex items-center mt-4">
+     <main class="flex items-center ">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-1"> 
+              <div class="artboard artboard-demo phone-3"> 
                <div class="flex items-center space-x-4">
                 <div class="stats shadow ">
                     <div class="stat"> 
-                      <div id="money-number" class="stat-value">890</div>
+                      <div id="current-money-number" class="stat-value">890</div>
                       <div class="stat-desc">Available Balance</div>
                       
                     </div>
@@ -27,8 +27,9 @@
                   </div>
                   <div class="divider"></div>
                      <div>
-                      <button id="btn-add-money" class="btn btn-sm">Add Money</button>
-                      <button id="btn-show-cashOut" class="btn btn-sm">Cash Out</button>
+                      <button id="btn-add-money" class="btn btn-lg">Add Money</button>
+                      <button id="btn-show-cashOut" class="btn btn-lg">Cash Out</button>
+                      <button id="btn-show-transeation" class="btn btn-lg">Transaction</button>
                      </div>
                      <div class="divider"></div>
                      <div>
@@ -39,13 +40,13 @@
                             <label class="label">
                               <span class="label-text font-bold">Amount to Add</span>
                             </label>
-                            <input id="amount-number" type="text" placeholder=" Enter your amount" class="input input-bordered " required />
+                            <input id="input-add-number" type="text" placeholder=" Enter your amount" class="input input-bordered " required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-bold">Pin Number</span>
                             </label>
-                            <input id="pin-number" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" autocomplete="off"  required />
+                            <input id="input-pin-number" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" autocomplete="off"  required />
                             
                           </div>
                           <div class="form-control mt-6">
@@ -76,12 +77,21 @@
                         </form>
                       </div>
                       <!-- cash out end -->
+                       <!-- transaction start -->
+                        <div id="transaction-section" class="hidden mb-4 p-4 text-2xl">
+                          <h1 class="text-center text-3xl font-bold">Transaction History</h1>
+                          <div id="transaction-container" >
+
+                          </div>
+                        </div>
+                        <!-- transaction end -->
                       </div>
                      </div>
                 </div>
               </div> 
           </div>
      </main>
+     <script src="./scripts/utilities.js"></script>
      <script src="./scripts/payoo.js"></script>
      <script src="./scripts/cashout.js"></script>
      <script src="./scripts/feature.js"></script>
