@@ -17,6 +17,6 @@
  document.getElementById('log-out').addEventListener('click',function(){
     const btnLogOut =document.getElementById('log-out').innerText;
     if(btnLogOut==='Log Out'){
-    window.location.href='/index.html';
+    window.location.href='/Payoo-MFS-Resources/index.html';
  }
 });
