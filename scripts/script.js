@@ -4,8 +4,20 @@
  document.getElementById('btn-login').addEventListener('click',function(event){
     // step 2 ==== prevent default behavior(prevent reloading browser)
     event.preventDefault();//vejal to beginners
-    console.log("login btn clicked");
+   
     // step 3 === get the phone number
     const phoneNumber =document.getElementById('phone-number').value;
-    console.log(phoneNumber);
+    // console.log(phoneNumber);
+    const pinNumber =document.getElementById('pin-number').value;
+    // console.log(pinNumber);
+    // step 4 === validate phone number and pin
+    // this is temporary.yo should don't like this.
+    if(phoneNumber==='01309623416' && pinNumber==='1234'){
+        console.log("you login successfully.");
+        window.location.href ='/payoo.html';
+        // step 5 == alow user to use the website
+    }
+    else{
+        alert("your pin number and phone number is a wrong.");
+    }
  })
