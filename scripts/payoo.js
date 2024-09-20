@@ -3,6 +3,10 @@
      event.preventDefault();
     const addMoney= getInputFieldValueById('input-add-number');
     const pinNumber= getInputFieldValueById('input-pin-number');
+    if(isNaN(addMoney)){
+      alert('Failed to add money.');
+      return;
+    }
     if(pinNumber===1234){
          const currentNumber =getTextFieldValueById('current-money-number');
            const newBalance =addMoney+currentNumber;
